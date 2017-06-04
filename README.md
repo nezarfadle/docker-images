@@ -1,5 +1,7 @@
 # How to build a Laravel Centos-PHP-FPM image
 
+This image is based on PHP 7.0
+
 ```git clone https://github.com/nezarfadle/docker-images.git```   
 ```cd docker-images/Laravel-Centos-PHP-FPM```  
 ```docker build -t laravel-phpfpm .```  
