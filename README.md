@@ -1,4 +1,4 @@
-# How to build a Laravel Centos-PHP-FPM image
+# How to build Centos-PHP-FPM Docker image for Laravel
 
 This image is based on PHP 7.0
 
