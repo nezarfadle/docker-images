@@ -9,5 +9,4 @@
  printf '%s\t%s\t%s\n' "curl" "7.57.0"
  printf '%s\t%s\t%s\n' "ab" "2.3"
  printf '%s\t%s\t%s\n' "apache2-utils" "2.4.29-r1"
-
 ) | column -t -s $'\t'
