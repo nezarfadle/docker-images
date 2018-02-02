@@ -2,6 +2,7 @@
 
 - php-7.1.12
 - composer-1.6.3
+- git-2.15.0
 - node-v8.9.3
 - npm-5.5.1
 - curl-7.57.0
