@@ -1,8 +1,11 @@
 # General purpose Alpine image with the following tools:
 
+- bash-4.4.19
+- make-4.2.1
 - php-7.1.12
 - composer-1.6.3
 - git-2.15.0
+- git-ftp-1.4.0
 - node-v8.9.3
 - npm-5.5.1
 - curl-7.57.0
