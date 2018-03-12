@@ -4,7 +4,6 @@ RUN rpm -ivh https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-rele
 RUN rpm -ivh http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 RUN yum install httpd php70-php php70-php-fpm php70-php-pecl-mysql php70-php-mcrypt php70-php-mbstring php70-php-pdo php70-php-xml php70-php-pecl-zip php70-php-common php70-php-pecl-crypto -y
 RUN ln -s /usr/bin/php70 /usr/bin/php
-COPY .htaccess /var/www/html
 RUN sed -i -e '/<Directory "\/var\/www\/html">/,/<\/Directory>/{s/AllowOverride None/AllowOverride All/}' /etc/httpd/conf/httpd.conf
 ENTRYPOINT ["httpd"]
 CMD ["-DFOREGROUND"]
