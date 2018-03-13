@@ -1,4 +1,5 @@
 FROM jenkins
+LABEL maintainer "nezarfadle@gmail.com" 
 USER root
 RUN apt-get update -y
 RUN apt-get install apt-transport-https ca-certificates curl software-properties-common -y
