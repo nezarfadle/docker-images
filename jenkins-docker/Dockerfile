@@ -1,5 +1,4 @@
 FROM jenkins
-LABEL maintainer "nezarfadle@gmail.com" 
 USER root
 RUN apt-get update -y
 RUN apt-get install apt-transport-https ca-certificates curl software-properties-common -y
@@ -9,6 +8,4 @@ RUN apt-get update -y
 RUN apt-get install docker-ce -y
 RUN usermod -a -G docker jenkins
 RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-COPY .bashrc_custom /etc/.bashrc_custom
-RUN echo ". /etc/.bashrc_custom" >> /etc/bash.bashrc
 USER jenkins
